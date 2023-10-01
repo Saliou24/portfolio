@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "fbb1857b-5dca-42c6-b67a-aeee409152e0",
+		"name": "log660lab2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12542046"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8200/labo2/verifyLogin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"DavidMForbes39@yahoo.com\",\n    \"password\": \"pauPhoo8O\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/labo2/verifyLogin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"labo2",
+						"verifyLogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8200/labo2/searchMovie",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8200/labo2/searchMovie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8200",
+					"path": [
+						"labo2",
+						"searchMovie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8200/labo2/movieInfos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"idFilm\": \"115685\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8200/labo2/movieInfos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8200",
+					"path": [
+						"labo2",
+						"movieInfos"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -218,52 +218,33 @@
 
 	/* local validation */
 	$('#contactForm').validate({
+    /* submit via ajax */
+    submitHandler: function(form) {
+        var sLoader = $('#submit-loader');
 
-		/* submit via ajax */
-		submitHandler: function(form) {
+        // Collectez les données du formulaire
+        var formData = {
+            name: $('#contactName').val(),
+            email: $('#contactEmail').val(),
+            subject: $('#contactSubject').val(),
+            message: $('#contactMessage').val()
+        };
 
-			var sLoader = $('#submit-loader');
+        // Envoyez l'e-mail en utilisant Email.js
+        emailjs.send('service_qkl6mxr', 'template_ynuw5f9', formData)
+            .then(function(response) {
+                sLoader.fadeOut();
+                $('#message-warning').hide();
+                $('#contactForm').fadeOut();
+                $('#message-success').fadeIn();
+            }, function(error) {
+                sLoader.fadeOut();
+                $('#message-warning').html("Une erreur s'est produite. Veuillez réessayer.");
+                $('#message-warning').fadeIn();
+            });
 
-			$.ajax({      	
-
-		      type: "POST",
-		      url: "inc/sendEmail.php",
-		      data: $(form).serialize(),
-		      beforeSend: function() { 
-
-		      	sLoader.fadeIn(); 
-
-		      },
-		      success: function(msg) {
-
-	            // Message was sent
-	            if (msg == 'OK') {
-	            	sLoader.fadeOut(); 
-	               $('#message-warning').hide();
-	               $('#contactForm').fadeOut();
-	               $('#message-success').fadeIn();   
-	            }
-	            // There was an error
-	            else {
-	            	sLoader.fadeOut(); 
-	               $('#message-warning').html(msg);
-		            $('#message-warning').fadeIn();
-	            }
-
-		      },
-		      error: function() {
-
-		      	sLoader.fadeOut(); 
-		      	$('#message-warning').html("Something went wrong. Please try again.");
-		         $('#message-warning').fadeIn();
-
-		      }
-
-	      });     		
-  		}
-
+    	}
 	});
-
 
  	/*----------------------------------------------------- */
   	/* Back to top
