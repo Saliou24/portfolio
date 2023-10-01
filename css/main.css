@@ -1898,9 +1898,23 @@ header .logo a {
 }
 
 #portfolio .folio-item .adjust-height {
-	height: 200px;
-	/* Ajustez cette valeur en fonction de la hauteur souhaitée */
+	height: 650px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+
 }
+
+#portfolio .folio-item .adjust-heightt {
+	height: 360px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+
+}
+
 
 #portfolio .overlay {
 	position: absolute;
