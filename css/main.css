@@ -1502,7 +1502,7 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #intro {
-	background: #151515 url(../images/intro-bg.jpg) no-repeat center bottom;
+	background: #151515 url(../images/macbook.jpg) no-repeat center bottom;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -1898,7 +1898,7 @@ header .logo a {
 }
 
 #portfolio .folio-item .adjust-height {
-	height: 650px;
+	height: 550px;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -1908,6 +1908,15 @@ header .logo a {
 
 #portfolio .folio-item .adjust-heightt {
 	height: 360px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+
+}
+
+#portfolio .folio-item .adjust-heighttt {
+	height: 450px;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
