@@ -1,0 +1,75 @@
+/* Style global */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Style pour les titres */
+h1 {
+    color: #ff00aa;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Style pour les paragraphes */
+p {
+    line-height: 1.6;
+}
+
+/* Style pour les liens */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Style pour les liens de téléchargement */
+a.download-link {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Style pour l'iframe vidéo */
+iframe {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    max-width: 100%;
+}
+
+/* Ajoutez des styles spécifiques à votre contenu si nécessaire */
+
+/* Style pour la section vidéo */
+.video-section {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+.video-section h1 {
+    color: #fff;
+}
+
+.video-section p {
+    color: #ccc;
+}
