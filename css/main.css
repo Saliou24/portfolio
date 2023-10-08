@@ -2089,6 +2089,48 @@ header .logo a {
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 		/* Ajoute une ombre douce aux images */
 	}
+
+	#portfolio .folio-item .adjust-height {
+		height: 300px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center;
+	}
+
+
+	#portfolio .folio-item .adjust-heighttt {
+		height: 300px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center;
+	}
+
+	#portfolio .folio-item .adjust-heightt {
+		height: 300px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center;
+	}
+
+	#portfolio .folio-item .adjust-height-last {
+		height: 300px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center;
+	}
+
+	#portfolio .folio-item .adjust-height-battle {
+		width: 100%;
+		height: 300px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center;
+	}
 }
 
 @media only screen and (max-width:400px) {
