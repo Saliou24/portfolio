@@ -1917,7 +1917,7 @@ header .logo a {
 }
 
 #portfolio .folio-item .adjust-height {
-	height: 550px;
+	height: 385px;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -1927,6 +1927,16 @@ header .logo a {
 
 #portfolio .folio-item .adjust-heightt {
 	height: 360px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+
+}
+
+#portfolio .folio-item .adjust-height-last {
+	height: 384px;
+	width: 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -2017,11 +2027,67 @@ header .logo a {
 	#portfolio .folio-title {
 		font-size: 3.1rem;
 	}
+
+	#portfolio .folio-item {
+		width: 50%;
+		/* Largeur de 50% pour afficher deux images par ligne */
+		/* Espacement entre les images */
+	}
+
+	#portfolio .folio-item:nth-child(odd) {
+		clear: left;
+	}
+
+	#portfolio .folio-item img {
+		max-width: 100%;
+		height: auto;
+		border-radius: 10px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	}
+
+	#portfolio .folio-item .adjust-height {
+		height: 400px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center;
+
+	}
+
+	#portfolio .folio-item .adjust-height-last {
+		height: 380px;
+		width: 100%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center;
+		border-radius: 10px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+	}
 }
 
 @media only screen and (max-width:768px) {
 	#portfolio .folio-title {
 		font-size: 2.5rem;
+	}
+
+	#portfolio .folio-item {
+		width: 100%;
+		/* Largeur de 100% pour occuper toute la largeur de l'écran */
+		margin-bottom: 20px;
+		/* Espacement entre les images */
+	}
+
+	#portfolio .folio-item img {
+		max-width: 100%;
+		/* Limite la largeur des images à 100% de la largeur du conteneur */
+		height: auto;
+		/* Ajuste automatiquement la hauteur en conservant les proportions */
+		border-radius: 10px;
+		/* Ajoute des coins arrondis aux images */
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		/* Ajoute une ombre douce aux images */
 	}
 }
 
@@ -2108,10 +2174,7 @@ header .logo a {
 	border-right: 1px solid rgba(200, 200, 200, 0.1);
 }
 
-.popup-modal .link-box a:last-child {
-	text-align: center;
-	width: 100%;
-}
+
 
 .popup-modal .link-box a:hover {
 	background: #cc005f;
