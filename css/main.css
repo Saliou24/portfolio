@@ -1729,6 +1729,7 @@ header .logo a {
 	background: #FFFFFF;
 	padding-top: 12rem;
 	padding-bottom: 15rem;
+	background-color: #e0dede;
 }
 
 #about .section-intro {
@@ -1739,19 +1740,33 @@ header .logo a {
 	margin-top: 4.2rem;
 	margin-right: -30px;
 	margin-left: -30px;
+	display: flex;
+	/* Utilisation de Flexbox pour aligner l'image et le texte horizontalement */
+	align-items: center;
+	/* Centre verticalement les éléments dans le div */
 }
 
 .intro-info img {
-	height: 15rem;
-	width: 15rem;
-	border-radius: 50%;
-	margin-top: 80px;
-	float: left;
+	height: 30rem;
+	width: 25rem;
+	margin-right: 20px;
+	border-radius: 10px;
+	/* Ajoute des coins arrondis à l'image */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	/* Ajoute une ombre douce */
+	transition: transform 0.3s ease;
+	/* Ajoute une transition au survol */
+}
+
+.intro-info img:hover {
+	transform: scale(1.1);
+	/* Applique un effet de zoom au survol de la souris */
 }
 
 .intro-info .lead {
 	text-align: justify;
-	padding-left: 15rem;
+	flex-grow: 4;
+	/* Permet au texte de prendre autant d'espace que possible à droite de l'image */
 }
 
 .about-content {
@@ -1759,9 +1774,11 @@ header .logo a {
 	text-align: left;
 	max-width: 850px;
 	margin-bottom: 3.6rem;
+
 }
 
 .about-content h3 {
+	color: #FF0077;
 	font-family: "poppins-bold", sans-serif;
 	font-size: 1.8rem;
 	text-transform: uppercase;
@@ -1779,6 +1796,7 @@ header .logo a {
 }
 
 .about-content .info-list li strong {
+	color: white;
 	font-family: "poppins-bold", sans-serif;
 	color: #313131;
 	text-transform: uppercase;
