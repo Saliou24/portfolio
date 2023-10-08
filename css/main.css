@@ -1873,18 +1873,19 @@ header .logo a {
 	.intro-info {
 		text-align: center;
 		margin-top: 3rem;
+		flex-direction: column;
+		/* Inverse l'ordre d'affichage en taille mobile (image au-dessus du texte) */
 	}
 
 	.intro-info img {
-		height: 6.6rem;
-		width: 6.6rem;
-		float: none;
-		display: inline-block;
+		height: 400px;
+		width: 100%;
+		margin-right: 0;
 	}
 
 	.intro-info .lead {
 		padding-left: 0;
-		text-align: center;
+		text-align: justify;
 	}
 }
 
